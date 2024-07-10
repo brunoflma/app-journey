@@ -41,8 +41,8 @@ jobs:
         context: .
         push: true
         tags: |
-          brunoferreiram/nlw.journey.api:${{ steps.generate_sha.outputs.sha }}
-          brunoferreiram/nlw.journey.api:latest
+          brunoferreiram/api-journey:${{ steps.generate_sha.outputs.sha }}
+          brunoferreiram/api-journey:latest
 
     - name: Update image helm
       uses: fjogeleit/yaml-update-action@main
