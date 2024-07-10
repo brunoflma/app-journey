@@ -44,10 +44,10 @@ jobs:
           brunoferreiram/nlw.journey.api:${{ steps.generate_sha.outputs.sha }}
           brunoferreiram/nlw.journey.api:latest
 
-    - name: Update image helm
-      uses: fjogeleit/yaml-update-action@main
-      with:
-        branch: release
+    #- name: Update image helm
+      #uses: fjogeleit/yaml-update-action@main
+      #with:
+        #branch: release
         targetBranch: main
         createPR: true
         valueFile: 'deploy/values.yaml'
