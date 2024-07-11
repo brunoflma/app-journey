@@ -18,7 +18,7 @@ spec:
     spec:
       containers:
         - name: api-journey
-          image: brunoferreiram/api-journey:60a6996
+          image: brunoferreiram/api-journey:60a6996 #imagem original
           env:
           - name: JOURNEY_DATABASE_USER
             valueFrom:
